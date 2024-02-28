@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Weather Application</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white dark:bg-black flex relative justify-center items-center space-y-5 h-full">
+
+    <nav class="fixed z-99 top-0  bg-white flex justify-between items-center shadow-md w-full px-3 py-3 border-b">
+        <img src="/five-days/day-2/assets/logo.svg" alt="logo" height="184" width="184" />
+        <!-- TODO: SHOW TIME AND GREEETING MESSAGE -->
+    </nav>
+
+    <section class="main flex justify-center items-center flex-col mt-10 mb-10 h-full w-full">
+        <h1 class="text-4xl font-bold text-zinc-700 mb-6 mt-20 text-center">Welcome to Our Weather Cast🔥</h1>
+        <p class="text-lg text-gray-500 mb-5 text-center">Get the latest weather updates for your city</p>
+        <div class=" flex justify-center items-center gap-4  rounded-md w-[50%]">
+
+
+            <input type="text" name="cityName" class="flex-1 h-12 pl-12 text-base font-semibold text-zinc-700 pr-4 border border-gray-300 rounded-md focus:outline-none"
+                placeholder="Enter your city! e.g Noida " />
+            <button type="submit" id="searchBtn" class="bg-indigo-500 text-white px-5 py-3 rounded-md">Search</button>
+        </div>
+
+        <div class="flex flex-row justify-center items-center w-full mx-4 my-5 ">
+
+            <div class="flex flex-col justify-center items-center flex-1 px-5">
+                <h1 id="temperature" class="text-7xl font-semibold text-gray-600 mb-10">
+                </h1>
+                <p id="feelsLikeTemperature" class="text-2xl font-semibold text-gray-500 mb-5"></p>
+                <div class="grid   grid-cols-4  gap-4  mt-5   w-full   text-gray-500  ">
+                    <div class="px-5 py-5 flex flex-col justify-center items-center border rounded-md shadow-md">
+                        <!-- icon for humidity -->
+                        <div class="px-2 py-2 flex items-center justify-center rounded-full  bg-red-200">
+                            <ion-icon name="trending-down-outline" class="text-red-500 text-3xl"></ion-icon>
+                        </div>
+                        <p class="text-lg font-semibold mt-2">Minimun</p>
+                        <p id="minimum" class="text-lg font-semibold mt-2"></p>
+                    </div>
+
+                    <div class="px-5 py-5 flex flex-col justify-center items-center border rounded-md shadow-md">
+                        <!-- icon for humidity -->
+                        <div class="px-2 py-2 flex items-center justify-center rounded-full  bg-green-200">
+                            <ion-icon name="trending-up-outline" class="text-green-500 text-3xl"></ion-icon>
+                        </div>
+                        <p class="text-lg font-semibold mt-2">Maximum</p>
+                        <p id="maximum" class="text-lg font-semibold mt-2"></p>
+                    </div>
+
+                    <div class="px-5 py-5 flex flex-col justify-center items-center border rounded-md shadow-md">
+                        <!-- icon for humidity -->
+                        <div class="px-2 py-2 flex items-center justify-center rounded-full  bg-yellow-200">
+                            <ion-icon name="globe-outline" class="text-yellow-500 text-3xl"></ion-icon>
+                        </div>
+                        <p class="text-lg font-semibold mt-2">Atompheric Pressure</p>
+                        <p id="pressure" class="text-lg font-semibold mt-2"></p>
+                    </div>
+
+                    <div class="px-5 py-5 flex flex-col justify-center items-center border rounded-md shadow-md">
+                        <!-- icon for humidity -->
+                        <div class="px-2 py-2 flex items-center justify-center rounded-full  bg-indigo-200">
+                            <ion-icon name="eye-outline" class="text-indigo-500 text-3xl"></ion-icon>
+                        </div>
+                        <p class="text-lg font-semibold mt-2">Visibility</p>
+                        <p id="visibility" class="text-lg font-semibold mt-2">3500</p>
+                    </div>
+
+                    <div class="px-5 py-5 flex flex-col justify-center items-center border rounded-md shadow-md">
+                        <!-- icon for humidity -->
+                        <div class="px-2 py-2 flex items-center justify-center rounded-full  bg-cyan-200">
+                            <ion-icon name="rainy-outline" class="text-cyan-500 text-3xl"></ion-icon>
+                        </div>
+                        <p class="text-lg font-semibold mt-2">Wind Speed</p>
+                        <p id="windSpeed" class="text-lg font-semibold mt-2"></p>
+                    </div>
+
+
+                    <div class="px-5 py-5 flex flex-col justify-center items-center border rounded-md shadow-md">
+                        <!-- icon for humidity -->
+                        <div class="px-2 py-2 flex items-center justify-center rounded-full  bg-blue-200">
+                            <ion-icon name="water-outline" class="text-blue-500 text-3xl"></ion-icon>
+                        </div>
+                        <p class="text-lg font-semibold mt-2">Humidity</p>
+                        <p id="humidity" class="text-lg font-semibold mt-2"></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="script.js">
+    </script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
