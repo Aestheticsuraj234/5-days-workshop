@@ -1,4 +1,5 @@
 
+https://rapidapi.com/worldapi/api/open-weather13
 
 1. **Document Type Declaration**: `<!DOCTYPE html>` declares the document type and version of HTML being used, in this case, HTML5.
 
@@ -77,3 +78,9 @@ This HTML document sets up a basic structure for a web page, including metadata,
      ```
 
 These examples demonstrate the basic constructs and usage of JavaScript, including variables, data types, operators, control structures, and functions.
+
+
+
+🔥Master JavaScript Course Link🔗
+
+https://bit.ly/master-javascript-zero-to-hero
