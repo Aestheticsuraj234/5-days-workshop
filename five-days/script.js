@@ -24,6 +24,33 @@ window.addEventListener("load", async (e) => {
       }
     });
   }
+
+  // write javascript for adding greeting message & show time
+  let greeting = document.getElementById("greeting");
+
+  
+  let time = document.getElementById("time");
+
+  let date = new Date();
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+
+  if(hours < 12){
+    greeting.innerHTML = "Good Morning";
+  }
+  else if(hours < 17)
+  {
+    greeting.innerHTML = "Good Afternoon";
+  }
+  else {
+    greeting.innerHTML = "Good Evening";
+  }
+
+  time.innerHTML = `${hours}:${minutes} P.M`;
+
+
+
+
 });
 
 function convertTemperature(temperature, unit) {
